@@ -5,8 +5,6 @@ protocol Music {
     func play()
 }
 
-// MARK: RockMusic
-
 struct RockMusic: Music {
     
     func play() {
@@ -18,7 +16,7 @@ struct RockMusic: Music {
 struct ClassicMusic: Music {
     
     func play() {
-        print("Play classic music 🎸")
+        print("Play classic music 🎻")
     }
     
 }
@@ -26,10 +24,11 @@ struct ClassicMusic: Music {
 struct PopMusic: Music {
     
     func play() {
-        print("Play classic music 🎸")
+        print("Play classic music 🎤")
     }
     
 }
+
 // MARK: - Music Factory
 
 struct MusicFactory {
@@ -82,3 +81,4 @@ struct MusicApp {
 let musicFactory = MusicFactory()
 let musicApp = MusicApp(factory: musicFactory, musicType: .classic)
 musicApp.startMusic()
+
