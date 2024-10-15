@@ -1,21 +1,21 @@
 
-// MARK: - Models
+// MARK: - Model
 
 class JangoFett {
     
-    // MARK: - Public properties
+    // MARK: Public properties
     
     let firstName = "Jango"
     let lastName = "Fett"
     var health = 100.0
     
-    // MARK: - Private properties
+    // MARK: Private properties
     
     private let strength: Float = 80.0
     private let agility: Float = 60.0
     private let intelligence: Float = 85.0
     
-    // MARK: - Public method
+    // MARK: Public method
     
     func attack() -> Float {
         return (strength + agility) / 2.0
